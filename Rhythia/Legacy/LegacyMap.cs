@@ -190,7 +190,7 @@ namespace SquircleUtil.Rhythia.Legacy
                         y = parser.Get(1)[0];
                     }
 
-                    notes.Add(new(millisecond, x, y));
+                    notes.Add(new(millisecond, x - 1, -y + 1));
                 }
 
                 return new LegacyMap(audioBuffer, coverBuffer, null, new LegacyMapMarkers() { Notes = notes }, metadata);
