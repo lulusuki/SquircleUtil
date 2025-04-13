@@ -1,4 +1,3 @@
-using SquircleUtil.Rhythia;
 
 namespace SquircleUtil.Phoenyx
 {

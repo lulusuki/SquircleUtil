@@ -28,7 +28,7 @@ namespace SquircleUtil.Rhythia
         {
             var _map = new Map(metadata);
             var lastDelta = 0;
-            var count = 0;
+            
             _map.Metadata.Mappers = map.Metadata.Mappers;
             _map.Metadata.MappersIds = map.Metadata.MappersIds;
             _map.Markers.NoteFields = 3;
