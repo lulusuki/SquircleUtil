@@ -36,8 +36,7 @@ namespace SquircleUtil.Rhythia
             var map = maps.First();
             var mapSet = new MapSet();
             var meta = map.Metadata;
-
-            mapSet.Metadata.ID = meta.ID;
+            
             mapSet.Metadata.AudioExtension = meta.AudioExtension;
             mapSet.Metadata.Artist = meta.Artist;
             mapSet.Metadata.Title = meta.Title;

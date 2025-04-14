@@ -5,8 +5,6 @@ namespace SquircleUtil.Rhythia
     [JsonObject]
     public class MapMetadata : IRhythiaMapMetadata
     {
-        [JsonIgnore]
-        public string ID { get; set; } = string.Empty;
 
         [JsonProperty("audioExtension")]
         public string AudioExtension { get; set; } = string.Empty;
@@ -32,8 +30,7 @@ namespace SquircleUtil.Rhythia
         [JsonProperty("noteCount")]
         public int NoteCount { get; set; }
 
-        public int Difficulty { get; set; }
-
+        [JsonProperty("difficultyName")]
         public string DifficultyName { get; set; } = string.Empty;
 
         IEnumerable<string> IMapMetadata.Mappers => Mappers;

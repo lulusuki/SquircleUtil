@@ -227,9 +227,6 @@ namespace SquircleUtil.Rhythia
                 var metadata = JsonConvert.DeserializeObject<MapMetadata>(Encoding.UTF8.GetString(metaBuffer))!;
                 var mapMarkers = JsonConvert.DeserializeObject<MapObjects>(Encoding.UTF8.GetString(objectsBuffer))!;
 
-
-                metadata.ID = mapSetMetadata.ID;
-
             
                 if (metadata.AudioExtension != string.Empty && File.Exists($"{folder}/audio.{metadata.AudioExtension}"))
                 {

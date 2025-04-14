@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 namespace SquircleUtil.Phoenyx
 {
     [JsonObject]
-    public class PhoenyxMapMetadata : IMapMetadata
+    public class PhoenyxMapMetadata : IPhoenyxMapMetadata, IHasID
     {
         public string ID { get; set; } = string.Empty;
 
@@ -28,6 +28,8 @@ namespace SquircleUtil.Phoenyx
         public string DifficultyName { get; set; } = string.Empty;
 
         public int NoteCount { get; set; }
+
+        public bool HasColorSet => throw new NotImplementedException();
 
         IEnumerable<string> IMapMetadata.Mappers => Mappers;
     }
