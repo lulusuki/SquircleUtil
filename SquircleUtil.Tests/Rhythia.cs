@@ -4,10 +4,12 @@ namespace SquircleUtil.Tests;
 
 public class Rhythia
 {
+    private string mapsFolder = "../../../../maps";
+    
     [Fact]
     public void Properly_Parsed()
     {
-        var map = Map.Decode("C:/Users/Faded/Desktop/SquircleUtil/rhym_map");
+        var map = Map.Decode($"{mapsFolder}/rhym_map");
         Assert.NotNull(map);
     }
 }
